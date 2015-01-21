@@ -70,7 +70,7 @@ public class OnrCharacterPanel extends javax.swing.JPanel {
         float grey;
         for (int i = 0; i < ROW_NUM; i++) {
             for (int j = 0; j < COL_NUM; j++) {
-                grey = (float) (1 - character[i * 5 + j]);
+                grey = (float) (1 - character[i * COL_NUM + j]);
                 g.setColor(new Color(grey, grey, grey));
                 g.fillRect(sx + j * pixelSize, sy + i * pixelSize, pixelSize, pixelSize);
             }
