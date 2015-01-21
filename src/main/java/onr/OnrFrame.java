@@ -142,15 +142,15 @@ public class OnrFrame extends JFrame {
     private onr.OnrCharacterPanel twoTemplate;
     private onr.OnrCharacterPanel zeroTemplate;
 
+    private OnrApplet onrApplet;
+
     /**
      * Creates new form onr.OnrFrame
+     * @param onrApplet
      */
-    public OnrFrame() throws NeuralNetworkException {
+    public OnrFrame(OnrApplet onrApplet) throws NeuralNetworkException {
 
-        OnrApplet myApplet = new OnrApplet();
-        myApplet.start();
-        myApplet.init();
-        getContentPane().add(myApplet.getContentPane());
+        this.onrApplet = onrApplet;
 
         try {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
@@ -181,13 +181,6 @@ public class OnrFrame extends JFrame {
         System.out.print("Training perceptrons...");
         trainPerceptrons();     // Generate the normal/noisy data
         System.out.println("done.");
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) throws NeuralNetworkException {
-        new OnrFrame().setVisible(true);
     }
 
     public void generateData() {
