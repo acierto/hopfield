@@ -19,110 +19,121 @@ public class OnrFrame extends JFrame {
 
     static final double[] ONE =
             {0, 0, 0, 1, 0, 0,
-             0, 0, 0, 0, 0, 0,
-             0, 0, 1, 0, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 0 ,1, 1, 0, 0};
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 1, 0,
+                    0, 0 ,1, 1, 0, 0};
 
     static final double[] TWO =
             {0, 0, 1, 0, 0, 0,
-             0, 0, 0, 0, 0, 0,
-             0, 0, 1, 0, 0, 0,
-             0, 0, 1, 1, 0, 0,
-             0, 1, 1, 0, 0, 0,
-             1, 0, 1, 0, 0, 0,
-             1, 1, 1, 0, 0, 0,
-             0, 1 ,0, 0, 0, 0};
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 1, 0, 0, 0,
+                    0, 0, 1, 1, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    1, 0, 1, 0, 0, 0,
+                    1, 1, 1, 0, 0, 0,
+                    0, 1 ,0, 0, 0, 0};
 
     static final double[] THREE =
             {0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 1, 0, 1, 0, 0,
-             0, 1, 1, 0, 0, 0,
-             0, 1, 1, 0, 0, 0,
-             0, 1, 0, 1, 0, 0,
-             0, 1 ,0, 0, 1, 0};
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 1, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1 ,0, 0, 1, 0};
 
     static final double[] FOUR =
             {0, 0, 1, 1, 0, 0,
-             0, 1, 0, 1, 0, 0,
-             0, 1, 0, 1, 0, 0,
-             0, 1, 1, 0, 0, 0,
-             1, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 1, 0, 1, 0, 0,
-             0, 0 ,1, 0, 0, 0};
+                    0, 1, 0, 1, 0, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    1, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 1, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 0 ,1, 0, 0, 0};
 
     static final double[] FIVE =
             {1, 1, 1, 1, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0, 1, 0, 1, 0,
-             1, 0 ,1, 0, 1, 1};
+                    1, 0, 1, 0, 1, 0,
+                    1, 0, 1, 0, 1, 0,
+                    1, 0, 1, 0, 1, 0,
+                    1, 0, 1, 0, 1, 0,
+                    1, 0, 1, 0, 1, 0,
+                    1, 0, 1, 0, 1, 0,
+                    1, 0 ,1, 0, 1, 1};
 
     static final double[] SIX =
             {1, 1, 1, 1, 0, 0,
-             1, 0, 0, 1, 0, 0,
-             1, 0, 0, 1, 0, 0,
-             1, 0, 0, 1, 0, 0,
-             1, 0, 0, 1, 0, 0,
-             1, 0, 0, 1, 0, 0,
-             1, 0, 0, 1, 0, 1,
-             1, 0 ,0, 0, 1, 0};
+                    1, 0, 0, 1, 0, 0,
+                    1, 0, 0, 1, 0, 0,
+                    1, 0, 0, 1, 0, 0,
+                    1, 0, 0, 1, 0, 0,
+                    1, 0, 0, 1, 0, 0,
+                    1, 0, 0, 1, 0, 1,
+                    1, 0 ,0, 0, 1, 0};
 
     static final double[] SEVEN =
             {0, 1, 1, 1, 0, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 1, 0, 0,
-             0, 1 ,1, 1, 0, 0};
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 1, 0, 0,
+                    0, 1 ,1, 1, 0, 0};
 
     static final double[] EIGHT =
             {0, 0, 1, 1, 0, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 1, 0, 0, 1, 0,
-             0, 1, 1, 1, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             0, 1, 0, 0, 0, 0,
-             1, 0 ,0, 0, 0, 0};
+                    0, 1, 0, 0, 1, 0,
+                    0, 1, 0, 0, 1, 0,
+                    0, 1, 0, 0, 1, 0,
+                    0, 1, 1, 1, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    1, 0 ,0, 0, 0, 0};
 
     static final double[] NINE =
-             {0, 1, 1, 1, 0, 0,
-              0, 1, 0, 1, 0, 0,
-              0, 1, 0, 1, 0, 0,
-              0, 1, 1, 1, 0, 0,
-              0, 1, 0, 0, 0, 0,
-              0, 1, 1, 0, 0, 0,
-              0, 1, 0, 1, 0, 0,
-              0, 1 ,0, 0, 1, 0};
+            {0, 1, 1, 1, 0, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1, 1, 1, 0, 0,
+                    0, 1, 0, 0, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    0, 1, 0, 1, 0, 0,
+                    0, 1 ,0, 0, 1, 0};
 
     static final double[] ZERO =
             {0, 1, 1, 1, 0, 0,
-             1, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 0, 0,
-             0, 1, 1, 0, 0, 0,
-             0, 0, 0, 1, 0, 0,
-             0, 0, 0, 0, 1, 0,
-             1, 0, 0, 0, 1, 0,
-             0, 1 ,1, 1, 1, 0};
+                    1, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 0, 0,
+                    0, 1, 1, 0, 0, 0,
+                    0, 0, 0, 1, 0, 0,
+                    0, 0, 0, 0, 1, 0,
+                    1, 0, 0, 0, 1, 0,
+                    0, 1 ,1, 1, 1, 0};
+
+    static final double[] UNDEFINED =
+            {0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0,
+                    0, 0 ,0, 0, 0, 0};
+
 
     static final public double[][] DIGITS = {ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE};
     protected int noisyTemplates = 25;
 
     protected PerceptronNN[] perceptron = new PerceptronNN[DIGITS.length];
     protected double[][] trainingData = new double[noisyTemplates * DIGITS.length][BIT_SIZE];
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private JButton addNoiseButton;
     private JButton classifyButton;
     private JButton clearButton;
@@ -142,15 +153,10 @@ public class OnrFrame extends JFrame {
     private onr.OnrCharacterPanel twoTemplate;
     private onr.OnrCharacterPanel zeroTemplate;
 
-    private OnrApplet onrApplet;
-
     /**
      * Creates new form onr.OnrFrame
-     * @param onrApplet
      */
-    public OnrFrame(OnrApplet onrApplet) throws NeuralNetworkException {
-
-        this.onrApplet = onrApplet;
+    public OnrFrame() throws NeuralNetworkException {
 
         try {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
@@ -175,12 +181,16 @@ public class OnrFrame extends JFrame {
         zeroTemplate.setCharacter(ZERO);
 
         System.out.print("Generating data...");
-        generateData();     // Generate the normal/noisy data
+        generateData();
         System.out.println("done.");
 
         System.out.print("Training perceptrons...");
-        trainPerceptrons();     // Generate the normal/noisy data
+        trainPerceptrons();
         System.out.println("done.");
+    }
+
+    public static void main(String args[]) throws NeuralNetworkException {
+        new OnrFrame().setVisible(true);
     }
 
     public void generateData() {
@@ -499,11 +509,12 @@ public class OnrFrame extends JFrame {
         }
 
         if (bestIndex == -1) {
-            bestIndex = 0;
+            outputPanel.setCharacter(UNDEFINED);
+        } else {
+            outputPanel.setCharacter(DIGITS[bestIndex]);
         }
-        outputPanel.setCharacter(DIGITS[bestIndex]);
-        outputPanel.repaint();
 
+        outputPanel.repaint();
     }
 
     private void clearButtonActionPerformed() {
