@@ -231,8 +231,8 @@ public class OnrFrame extends JFrame {
         for (int i = 0; i < trainingData.length; i++) {
             for (int x = 0; x < BIT_SIZE; x++) {
                 greyval = (float) (1 - trainingData[i][x]);
-                px = (x % 5) * size + xoffset;
-                py = (x / 5) * size + yoffset;
+                px = (x % COL_NUM) * size + xoffset;
+                py = (x / COL_NUM) * size + yoffset;
 
                 g.setColor(new Color(greyval, greyval, greyval));
                 g.fillRect(px, py, size, size);
